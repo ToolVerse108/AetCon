@@ -5,6 +5,9 @@
     <title>Uverse360 — Secret Society</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Lottie Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
 </head>
 <body>
 
@@ -38,7 +41,56 @@
         <h2>WE HONOR ACTION, NOT OPINION</h2>
     </div>
 </section>
+<!-- ======= Legends Symbol Grid ======= -->
+<section id="legends" class="legends">
+    <h2>Wisdom has no biography. Only principles.</h2>
+    <div class="symbols-grid">
+        <div class="symbol" data-principle="Question Everything">⌁</div>
+        <div class="symbol" data-principle="Invent what doesn’t exist">Δ</div>
+        <div class="symbol" data-principle="Always play the next move">∷</div>
+        <div class="symbol" data-principle="Seek clarity over noise">◬</div>
+        <div class="symbol" data-principle="Act before being asked">⌖</div>
+        <div class="symbol" data-principle="Measure, then execute">∇</div>
+    </div>
+</section>
+
+<!-- Legend Modal -->
+<div class="modal" id="legendModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+<!-- ======= Ascension Protocol ======= -->
+<section id="ascension" class="ascension">
+    <h2>ASCENSION IS EARNED</h2>
+    <div class="meter">
+        <div class="ring" data-level="Seeker">Seeker</div>
+        <div class="ring" data-level="Scholar">Scholar</div>
+        <div class="ring" data-level="Innovator">Innovator</div>
+        <div class="ring" data-level="Visionary">Visionary</div>
+        <div class="ring" data-level="The Circle">The Circle</div>
+    </div>
+</section>
+
+<!-- ======= VIP Chamber ======= -->
+<section id="vip" class="vip">
+    <div class="vip-background"></div>
+    <div class="user-avatar"></div>
+    <div class="vip-text">
+        <p>THE HIGHEST FORM OF INTELLIGENCE IS APPLICATION.</p>
+        <p>Qualify for entry.</p>
+    </div>
+</section>
+<!-- Audio Elements -->
+<audio id="ambientAudio" src="assets/ambient-hum.mp3" loop autoplay></audio>
+<audio id="vaultChime" src="assets/vault-chime.mp3"></audio>
+
+<!-- Lottie Container for Gold Dust -->
+<div id="goldParticles" style="position: fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:9999;"></div>
 
 <script src="scripts/main.js"></script>
 </body>
 </html>
+
